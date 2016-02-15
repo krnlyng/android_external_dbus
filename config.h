@@ -62,7 +62,8 @@
 #define DBUS_SYSTEM_BUS_DEFAULT_ADDRESS "unix:path="DBUS_SYSTEM_SOCKET
 
 /* The name of the socket the system bus listens on by default */
-#define DBUS_SYSTEM_SOCKET ANDROID_SOCKET_DIR"/dbus"
+//#define DBUS_SYSTEM_SOCKET ANDROID_SOCKET_DIR"/dbus"
+#define DBUS_SYSTEM_SOCKET "/var/run/dbus/system_bus_socket"
 
 /* Where to put test sockets */
 #define DBUS_TEST_SOCKET_DIR "/data"
