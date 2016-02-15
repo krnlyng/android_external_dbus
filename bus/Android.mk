@@ -4,7 +4,8 @@ include $(CLEAR_VARS)
 LOCAL_C_INCLUDES:= \
 	$(call include-path-for, dbus) \
 	$(call include-path-for, dbus)/dbus \
-	external/expat/lib/
+	external/expat/lib/ \
+	$(LOCAL_PATH)/..
 
 LOCAL_CFLAGS:=-O3
 LOCAL_CFLAGS+=-DDBUS_COMPILATION
